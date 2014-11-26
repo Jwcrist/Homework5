@@ -24,10 +24,7 @@ shinyUI(fluidPage(
                          min = 1969,
                          max = 2005,
                          value = 1980),
-             "This is a project created to demonstrate how shiny application 
-              can be used for exploratory data analysis. For more information 
-              about this project please visit github repository 
-              https://github.com/mamajumder/usa-crime"
+             "This is a project created for Homework 5"
            )
     ),
     column(6, 
