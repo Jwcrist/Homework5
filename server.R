@@ -3,7 +3,7 @@ library(scales)
 library(ggmap)
 library(dplyr)
 
-crimeDat <- readRDS("usaCrimeDat.rds") %>%
+crimeDat <- readRDS("usaCrimeDat(1).rds") %>%
   filter(state != 'district of columbia')
 
 mdat <- map_data("state")
