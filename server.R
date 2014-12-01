@@ -5,7 +5,7 @@ library(dplyr)
 
 crimeDat <- readRDS("usaCrimeDat(1).rds") %>%
   filter(state != 'district of columbia')
-
+crimeDat<-crimeDat[crimeDat$state == 'nebraska',] 
 mdat <- map_data("state")
 
 shinyServer(function(input, output) {

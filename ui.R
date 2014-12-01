@@ -1,5 +1,8 @@
 crimeDat <- readRDS("usaCrimeDat(1).rds")
+crimeDat<-crimeDat[crimeDat$state == 'nebraska',] 
 myCrime <- as.character(unique(crimeDat$Crime))
+
+
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
