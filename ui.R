@@ -26,7 +26,7 @@ shinyUI(fluidPage(
                          "Crime Year",
                          min = 1969,
                          max = 2005,
-                         value = c(1980,1990)),
+                         value = c(1980,2005)),
              "This is a project created for Homework 5"
            )
     ),
