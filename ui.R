@@ -1,5 +1,5 @@
 crimeDat <- readRDS("usaCrimeDat(1).rds")
-crimeDat<-crimeDat[crimeDat$state == 'nebraska',] 
+crimeDat<-crimeDat[crimeDat$state == 'nebraska',]
 myCrime <- as.character(unique(crimeDat$Crime))
 
 
@@ -26,7 +26,7 @@ shinyUI(fluidPage(
                          "Crime Year",
                          min = 1969,
                          max = 2005,
-                         value = 1980),
+                         value = c(1980,1990)),
              "This is a project created for Homework 5"
            )
     ),
