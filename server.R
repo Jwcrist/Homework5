@@ -13,7 +13,8 @@ shinyServer(function(input, output) {
   # setting the reactive environment 
   dataInput <- reactive({
     subset(crimeDat,
-           Year==input$myYears & 
+           Year>=input$myYears[1] &
+             Year<=input$myYears[2] &
              Crime==input$selectedCrime)
   })
   
