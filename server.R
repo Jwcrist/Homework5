@@ -19,8 +19,8 @@ shinyServer(function(input, output) {
   
   # PLotting the bar plots
   output$myPlot <- renderPlot({
-    ggplot(dataInput(), aes(reorder(Year,rate),rate))+ 
-      geom_point(color="steelblue", size=4)+
+    ggplot(dataInput(), aes(Year,rate))+ 
+      geom_bar(stat="identity")+
       coord_flip() + theme_bw() 
     
   })
