@@ -7,7 +7,7 @@ crimeDat <- readRDS("usaCrimeDat(1).rds") %>%
   filter(state != 'district of columbia')
 crimeDat<-crimeDat[crimeDat$state == 'nebraska',] 
 mdat <- map_data("state")
-
+head(crimeDat)
 shinyServer(function(input, output) {
   
   # setting the reactive environment 
@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
   
   # PLotting the bar plots
   output$myPlot <- renderPlot({
-    ggplot(dataInput(), aes(reorder(state,rate),rate))+ 
+    ggplot(dataInput(), aes(reorder(Year,rate),rate))+ 
       geom_point(color="steelblue", size=4)+
       coord_flip() + theme_bw() 
     
