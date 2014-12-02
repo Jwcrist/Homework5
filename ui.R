@@ -48,7 +48,7 @@ shinyUI(navbarPage('Exploritory Tool',
 
   
 ),
-tabPanel('summary',
+tabPanel('Summary',
          verbatimTextOutput("summary")
          
          
