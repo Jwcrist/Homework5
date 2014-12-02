@@ -5,7 +5,8 @@ myCrime <- as.character(unique(crimeDat$Crime))
 
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
+shinyUI(navbarPage('Exploritory Tool',
+                   tabPanel("Plots",
   ###################### first row starts here
   fluidRow(
     column(12,
@@ -44,6 +45,14 @@ shinyUI(fluidPage(
            plotOutput("myCrime",height = "400px", width="550px")
     )  
   )
+
   
-  
+)
+tabPanel('summary',
+         verbatimTextOutput("summary")
+         
+         
+         
+         )
+
 ))

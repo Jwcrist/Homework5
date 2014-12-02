@@ -16,6 +16,11 @@ shinyServer(function(input, output) {
            Year>=input$myYears[1] &
              Year<=input$myYears[2] &
              Crime==input$selectedCrime)
+    
+    
+    output$summary <- renderPrint({
+      summary(crimeDat)
+      
   })
   
   # PLotting the bar plots
