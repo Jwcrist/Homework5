@@ -18,8 +18,7 @@ shinyServer(function(input, output) {
              Crime==input$selectedCrime)
     
     
-    output$summary <- renderPrint({
-      summary(crimeDat)
+  
       
   })
   
@@ -54,7 +53,8 @@ shinyServer(function(input, output) {
       guides(colour = guide_legend(nrow = 2))+ 
       ylab("Rate/10,000 people")
   })
-  
+  output$summary <- renderPrint({
+    summary(crimeDat)
 })
-
+})
 
