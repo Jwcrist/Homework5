@@ -11,7 +11,7 @@ shinyUI(navbarPage('Exploritory Tool',
   fluidRow(
     column(12,
            # Application title takes all 12 column spaces
-           titlePanel("My Shiny application to explore US crime data")
+           titlePanel("My Shiny application to explore Nebraska's crime data")
     )),
   
   ###################### 2nd row starts here. 2 columns 
