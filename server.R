@@ -25,7 +25,7 @@ shinyServer(function(input, output) {
   # PLotting the bar plots
   output$myPlot <- renderPlot({
     ggplot(dataInput(), aes(Year,rate))+ 
-      geom_bar(stat="identity") + theme_bw() 
+      geom_line(stat="identity") + theme_bw() 
     
   })
   

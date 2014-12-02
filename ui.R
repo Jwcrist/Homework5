@@ -39,7 +39,7 @@ shinyUI(navbarPage('Exploritory Tool',
   ###################### 3rd row starts here. 2 columns
   fluidRow(
     column(5, 
-           plotOutput("myPlot",height = "900px",width="350px")
+           plotOutput("myPlot",height = "450px",width="550px")
     ),
     column(6, 
            plotOutput("myCrime",height = "400px", width="550px")
